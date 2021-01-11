@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'login_screen.dart';
 import 'registration_screen.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 class WelcomeScreen extends StatefulWidget {
   static const String id = 'welcome_screen';
@@ -16,8 +17,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> with SingleTickerProvider
 
   @override
   void initState() {
+    initFirebase();
     super.initState();
-
     animationController = AnimationController(duration: Duration(seconds: 1), vsync: this,);
     animation = ColorTween(begin: Colors.blue , end: Colors.white).animate(animationController);
     animationController.forward();
@@ -25,6 +26,10 @@ class _WelcomeScreenState extends State<WelcomeScreen> with SingleTickerProvider
     animationController.addListener(() {
       setState(() {});
     });
+  }
+
+  void initFirebase() async {
+    await Firebase.initializeApp();
   }
 
   @override

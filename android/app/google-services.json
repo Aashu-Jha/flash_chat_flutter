@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "887043386729",
+    "project_id": "flash-chat-dab9f",
+    "storage_bucket": "flash-chat-dab9f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887043386729:android:7667c13840b092fe34e1f8",
+        "android_client_info": {
+          "package_name": "com.nightbird.flash_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "887043386729-qab2oh6ko67tqnhgrqmjcpjd5bm5guri.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQq6q1M9JgToM9X70jKNoPvbSZdJmzXdQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "887043386729-qab2oh6ko67tqnhgrqmjcpjd5bm5guri.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
